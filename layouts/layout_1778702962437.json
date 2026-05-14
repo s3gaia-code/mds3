@@ -1,0 +1,195 @@
+{
+  "name": "hotel",
+  "category": "hotel",
+  "slideCount": 2,
+  "fields": {
+    "0": [
+      {
+        "field": "voci scheda tecnica",
+        "blockIndex": 0,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "cx": 2646365,
+          "cy": 1250954,
+          "xPct": 0,
+          "yPct": 0,
+          "cxPct": 22,
+          "cyPct": 18
+        },
+        "type": "text"
+      },
+      {
+        "field": "immagine",
+        "blockIndex": 1,
+        "position": {
+          "x": 3700129,
+          "y": 188913,
+          "cx": 8299783,
+          "cy": 6480175,
+          "xPct": 30,
+          "yPct": 3,
+          "cxPct": 68,
+          "cyPct": 94
+        },
+        "type": "image"
+      },
+      {
+        "field": "titolo",
+        "blockIndex": 2,
+        "position": {
+          "x": 88561,
+          "y": 377141,
+          "cx": 5537204,
+          "cy": 1019171,
+          "xPct": 1,
+          "yPct": 5,
+          "cxPct": 45,
+          "cyPct": 15
+        },
+        "type": "text"
+      },
+      {
+        "field": "titolo scheda tecnica",
+        "blockIndex": 3,
+        "position": {
+          "x": 207377,
+          "y": 2294147,
+          "cx": 5241926,
+          "cy": 877888,
+          "xPct": 2,
+          "yPct": 33,
+          "cxPct": 43,
+          "cyPct": 13
+        },
+        "type": "text"
+      },
+      {
+        "field": "cont scheda tecnica",
+        "blockIndex": 4,
+        "position": {
+          "x": 1542051,
+          "y": 2830717,
+          "cx": 5675315,
+          "cy": 2071682,
+          "xPct": 13,
+          "yPct": 41,
+          "cxPct": 47,
+          "cyPct": 30
+        },
+        "type": "text"
+      },
+      {
+        "field": "url",
+        "blockIndex": 5,
+        "position": {
+          "x": 115307,
+          "y": 4163985,
+          "cx": 1856598,
+          "cy": 276999,
+          "xPct": 1,
+          "yPct": 61,
+          "cxPct": 15,
+          "cyPct": 4
+        },
+        "type": "text"
+      }
+    ],
+    "1": [
+      {
+        "field": "immagine",
+        "blockIndex": 0,
+        "position": {
+          "x": 3156099,
+          "y": 188913,
+          "cx": 3776330,
+          "cy": 3230143,
+          "xPct": 26,
+          "yPct": 3,
+          "cxPct": 31,
+          "cyPct": 47
+        },
+        "type": "image"
+      },
+      {
+        "field": "immagine",
+        "blockIndex": 1,
+        "position": {
+          "x": 7121979,
+          "y": 188913,
+          "cx": 4877933,
+          "cy": 3240087,
+          "xPct": 58,
+          "yPct": 3,
+          "cxPct": 40,
+          "cyPct": 47
+        },
+        "type": "image"
+      },
+      {
+        "field": "titolo",
+        "blockIndex": 2,
+        "position": {
+          "x": 88561,
+          "y": 377141,
+          "cx": 5537204,
+          "cy": 1019171,
+          "xPct": 1,
+          "yPct": 5,
+          "cxPct": 45,
+          "cyPct": 15
+        },
+        "type": "text"
+      },
+      {
+        "field": "testo",
+        "blockIndex": 3,
+        "position": {
+          "x": 291433,
+          "y": 2227095,
+          "cx": 2476481,
+          "cy": 3584576,
+          "xPct": 2,
+          "yPct": 32,
+          "cxPct": 20,
+          "cyPct": 52
+        },
+        "type": "text"
+      },
+      {
+        "field": "immagine",
+        "blockIndex": 4,
+        "position": {
+          "x": 8399719,
+          "y": 3568719,
+          "cx": 3600194,
+          "cy": 3100368,
+          "xPct": 69,
+          "yPct": 52,
+          "cxPct": 30,
+          "cyPct": 45
+        },
+        "type": "image"
+      },
+      {
+        "field": "immagine",
+        "blockIndex": 5,
+        "position": {
+          "x": 3141004,
+          "y": 3568720,
+          "cx": 5077963,
+          "cy": 3100368,
+          "xPct": 26,
+          "yPct": 52,
+          "cxPct": 42,
+          "cyPct": 45
+        },
+        "type": "image"
+      }
+    ]
+  },
+  "sourceFileId": 34,
+  "notes": "Mappato da 2 slide, 12 campi",
+  "createdAt": "2026-05-13T20:11:19.282Z",
+  "updatedAt": "2026-05-13T20:11:19.282Z"
+}

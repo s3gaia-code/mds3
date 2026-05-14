@@ -1,0 +1,103 @@
+{
+  "name": "ristorante/venue",
+  "category": "ristoranti",
+  "slideCount": 2,
+  "fields": {
+    "0": [
+      {
+        "field": "numero_giorno",
+        "blockIndex": 0,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "cx": 12191996,
+          "cy": 877888,
+          "xPct": 0,
+          "yPct": 0,
+          "cxPct": 100,
+          "cyPct": 13
+        },
+        "type": "text"
+      },
+      {
+        "field": "immagine",
+        "blockIndex": 1,
+        "position": {
+          "x": 2284151,
+          "y": 188913,
+          "cx": 9715762,
+          "cy": 6480175,
+          "xPct": 19,
+          "yPct": 3,
+          "cxPct": 80,
+          "cyPct": 94
+        },
+        "type": "image"
+      },
+      {
+        "field": "sottotitolo",
+        "blockIndex": 2,
+        "position": {
+          "x": 159414,
+          "y": 367341,
+          "cx": 12191996,
+          "cy": 877888,
+          "xPct": 1,
+          "yPct": 5,
+          "cxPct": 100,
+          "cyPct": 13
+        },
+        "type": "text"
+      },
+      {
+        "field": "titolo",
+        "blockIndex": 3,
+        "position": {
+          "x": 181697,
+          "y": 1025155,
+          "cx": 12191996,
+          "cy": 877888,
+          "xPct": 1,
+          "yPct": 15,
+          "cxPct": 100,
+          "cyPct": 13
+        },
+        "type": "text"
+      },
+      {
+        "field": "testo",
+        "blockIndex": 4,
+        "position": {
+          "x": 289939,
+          "y": 1616336,
+          "cx": 1632379,
+          "cy": 3006720,
+          "xPct": 2,
+          "yPct": 24,
+          "cxPct": 13,
+          "cyPct": 44
+        },
+        "type": "text"
+      },
+      {
+        "field": "url",
+        "blockIndex": 5,
+        "position": {
+          "x": 111967,
+          "y": 5566237,
+          "cx": 6241550,
+          "cy": 276999,
+          "xPct": 1,
+          "yPct": 81,
+          "cxPct": 51,
+          "cyPct": 4
+        },
+        "type": "text"
+      }
+    ]
+  },
+  "sourceFileId": 21,
+  "notes": "Mappato da 2 slide, 6 campi",
+  "createdAt": "2026-05-13T20:11:43.170Z",
+  "updatedAt": "2026-05-13T20:11:43.170Z"
+}

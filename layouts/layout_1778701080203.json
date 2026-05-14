@@ -1,0 +1,133 @@
+{
+  "name": "attività",
+  "category": "attivita",
+  "slideCount": 2,
+  "fields": {
+    "0": [
+      {
+        "field": "numero_giorno",
+        "blockIndex": 0,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "cx": 12191996,
+          "cy": 877888,
+          "xPct": 0,
+          "yPct": 0,
+          "cxPct": 100,
+          "cyPct": 13
+        },
+        "type": "text"
+      },
+      {
+        "field": "immagine",
+        "blockIndex": 1,
+        "position": {
+          "x": 4006093,
+          "y": 188913,
+          "cx": 3241518,
+          "cy": 6480176,
+          "xPct": 33,
+          "yPct": 3,
+          "cxPct": 27,
+          "cyPct": 94
+        },
+        "type": "image"
+      },
+      {
+        "field": "titolo",
+        "blockIndex": 2,
+        "position": {
+          "x": 187680,
+          "y": 818196,
+          "cx": 9253535,
+          "cy": 877888,
+          "xPct": 2,
+          "yPct": 12,
+          "cxPct": 76,
+          "cyPct": 13
+        },
+        "type": "text"
+      },
+      {
+        "field": "testo",
+        "blockIndex": 3,
+        "position": {
+          "x": 282316,
+          "y": 1257140,
+          "cx": 3565289,
+          "cy": 3006720,
+          "xPct": 2,
+          "yPct": 18,
+          "cxPct": 29,
+          "cyPct": 44
+        },
+        "type": "text"
+      },
+      {
+        "field": "immagine",
+        "blockIndex": 4,
+        "position": {
+          "x": 8207491,
+          "y": 1321981,
+          "cx": 3792422,
+          "cy": 1195350,
+          "xPct": 67,
+          "yPct": 19,
+          "cxPct": 31,
+          "cyPct": 17
+        },
+        "type": "image"
+      },
+      {
+        "field": "immagine",
+        "blockIndex": 5,
+        "position": {
+          "x": 8207491,
+          "y": 2651697,
+          "cx": 3792422,
+          "cy": 2109105,
+          "xPct": 67,
+          "yPct": 39,
+          "cxPct": 31,
+          "cyPct": 31
+        },
+        "type": "image"
+      },
+      {
+        "field": "immagine",
+        "blockIndex": 6,
+        "position": {
+          "x": 8207491,
+          "y": 4882567,
+          "cx": 3792422,
+          "cy": 1786521,
+          "xPct": 67,
+          "yPct": 71,
+          "cxPct": 31,
+          "cyPct": 26
+        },
+        "type": "image"
+      },
+      {
+        "field": "immagine",
+        "blockIndex": 7,
+        "position": {
+          "x": 114300,
+          "y": 5926134,
+          "cx": 1450979,
+          "cy": 965204,
+          "xPct": 1,
+          "yPct": 86,
+          "cxPct": 12,
+          "cyPct": 14
+        },
+        "type": "image"
+      }
+    ]
+  },
+  "sourceFileId": 18,
+  "notes": "Mappato da 2 slide, 8 campi",
+  "createdAt": "2026-05-13T19:38:00.203Z",
+  "updatedAt": "2026-05-13T19:38:00.203Z"
+}
