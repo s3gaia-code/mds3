@@ -458,6 +458,15 @@ app.post('/api/extract', async (req, res) => {
     const placeholders = categories.map(() => '?').join(',');
     const files = db.prepare(`SELECT * FROM slide_files WHERE slide_type IN (${placeholders}) ORDER BY slide_type, file_name`).all(...categories);
 
+    // Backup database before extraction
+    try {
+      const fs = require('fs');
+      const backupDir = path.join(__dirname, 'backups');
+      if (!fs.existsSync(backupDir)) fs.mkdirSync(backupDir, { recursive: true });
+      const ts = new Date().toISOString().replace(/[:.]/g, '-');
+      fs.copyFileSync(DB_PATH, path.join(backupDir, `database_${ts}.sqlite`));
+    } catch (e) { console.error('Backup failed:', e.message); }
+
     // Clear old extracted data for these files
     const fileIds = files.map(f => f.id);
     db.prepare(`DELETE FROM extracted_data WHERE file_id IN (${fileIds.map(() => '?').join(',')})`).run(...fileIds);
@@ -691,6 +700,50 @@ app.get('/api/extracted-data/export', (req, res) => {
       'Content-Disposition': 'attachment; filename="dati_estratti.csv"',
     });
     res.send('\uFEFF' + csvLines.join('\r\n'));
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ---------- API: BATCH UPDATE EXTRACTED DATA ----------
+app.put('/api/extracted-data/batch', (req, res) => {
+  try {
+    const { ids, field_value } = req.body;
+    if (!ids || !Array.isArray(ids) || ids.length === 0) {
+      return res.status(400).json({ error: 'Specifica almeno un ID' });
+    }
+    const db = getDb();
+    const stmt = db.prepare('UPDATE extracted_data SET field_value = ? WHERE id = ?');
+    const updateMany = db.transaction((items) => { for (const id of items) stmt.run(field_value, id); });
+    updateMany(ids);
+    db.close();
+    res.json({ success: true, updated: ids.length });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ---------- API: PREVIEW FILES ----------
+app.post('/api/files/preview', (req, res) => {
+  try {
+    const { fileIds } = req.body;
+    if (!fileIds || !Array.isArray(fileIds) || fileIds.length === 0) {
+      return res.status(400).json({ error: 'Specifica fileIds' });
+    }
+    const db = getDb();
+    const placeholders = fileIds.map(() => '?').join(',');
+    const rows = db.prepare(`
+      SELECT sf.id, sf.file_name, sf.slide_type, r.name as region
+      FROM slide_files sf
+      JOIN regions r ON sf.region_id = r.id
+      WHERE sf.id IN (${placeholders})
+    `).all(...fileIds);
+    db.close();
+    // Map to order as requested
+    const map = {};
+    for (const r of rows) map[r.id] = r;
+    const ordered = fileIds.map(id => map[id]).filter(Boolean);
+    res.json(ordered);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
